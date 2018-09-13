@@ -6,15 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jQuery.js"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_788426_cfhiyeqsgqb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.esm.bundle.js"></script>
     <title>邢子豪的个人简历</title>
 </head>
 <body>
+    <header>
+        <embed src="video/Coldplay Gwyneth Paltrow - Everglow.mp3" type=""> 
+    </header>
     <a name="top"></a>
     <div class="container">
         <div class="row">
@@ -98,37 +104,17 @@
     <div class="container">
         <div class="row">
             <div class="zp">
-                <div class="col-md-12">
-                    <div class="ir_3">作品集</div>
-                </div>  
-                    <div class="col-md-4">
-                        <a href="https://xingjacky1996.github.io/xiaomi/" target="_blank">
-                            <div class="ht_1"></div>
-                            <div class="sm">
-                                <i class="iconfont icon-xiaomi"></i>
-                                <p>小米官网</p>
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/xiaomi/index.html"target="view_window"><img src="img/xiaomi.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/apple12/index.html"target="view_window"><img src="img/Apple.png "alt=""></a></div>
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/Mobile/index.html"target="view_window"><img src="img/AIbox.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/fuwuzhan/index.html"target="view_window"><img src="img/coponin.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/todolist/index.html"target="view_window"><img src="img/tudolist.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href="https://xingjacky1996.github.io/clock/index.html"target="view_window"><img src="img/block.png" alt=""></a></div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://xingjacky1996.github.io/apple12/" target="_blank">
-                            <div class="ht_2"></div>
-                            <div class="sm">
-                                <i class="iconfont icon-pingguo"></i>
-                                <p>苹果官网</p>
-                            </div>
-                        </a>    
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://xingjacky1996.github.io/Mobile/" target="_blank">
-                            <div class="ht_3"></div>
-                            <div class="sm">
-                                <i class="iconfont icon-ai"></i>
-                                <p>移动端人脸识别软件</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                        </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -181,4 +167,18 @@
         </div>
     </div>                                  
 </body>
+<script language="javascript"> 
+        var mySwiper = new Swiper('.swiper-container',{
+        effect : 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows : false
+        },
+        })
+        </script>
 </html>

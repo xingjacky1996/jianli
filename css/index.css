@@ -1186,6 +1186,25 @@
 }
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media screen and (min-width: 1200px) {
+    header{
+        width: 100%;
+        height: 54px;
+        position: fixed;
+        top:0;
+        background-color: #000;
+        z-index: 999;
+    }
+    embed{
+        width: 400px;
+        height: 100%;
+        float: right;
+        margin-right: 20px;
+    }
+    video{
+        width: 300px;
+        height: 100%;
+        background-color: #114155;
+    }
     .ba{
         width: 100%;
         height: 900px;
@@ -1220,6 +1239,10 @@
         text-align: center;
         line-height: 30px;
         animation: fall 1.5s 0s linear 1 forwards;
+    }
+    iframe{
+        width: 340px;
+        height: 340px;
     }
     .wo_3{
         width: 450px;
@@ -1419,9 +1442,17 @@
     }
     .zp{
         width: 100%;
-        height: 660px;
+        height: 600px;
         overflow: hidden;
         background:#FE9B71;
+        overflow: hidden;
+    }
+    .swiper-slide{
+        margin-top: 60px;
+    }
+    .swiper-slide img{
+        width: 760px;
+        height: 480px;
     }
     .ir_3{
         width: 192px;
